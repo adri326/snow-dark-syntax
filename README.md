@@ -19,8 +19,8 @@ Or open the atom settings with ctrl+, and go to install, click themes and search
 
 ###HTML
 
-![screenshot](./screenshots/snow-dark-html.png)
+![screenshot](./screenshots/snow-dark-html.png?raw=true)
 
 ###SCSS
 
-![screenshot](./screenshots/snow-dark-scss.png)
+![screenshot](./screenshots/snow-dark-scss.png?raw=true)
