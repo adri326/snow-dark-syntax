@@ -6,7 +6,7 @@ Many other dark themes I tried had either over the top bright colours or excessi
 
 I have also made a [second version](https://github.com/SnowJambi/snow-dark-material-syntax) intended for use with the Material UI theme which fixes the background for that theme.
 
-##Installation
+## Installation
 
 In a console type
 
@@ -15,12 +15,12 @@ apm install snow-dark-syntax
 ```
 Or open the atom settings with ctrl+, and go to install, click themes and search for snow-dark-syntax.
 
-##Examples
+## Examples
 
-###HTML
+### HTML
 
 ![snow-dark-html](https://cloud.githubusercontent.com/assets/18164547/14588207/f5c1eb8c-0506-11e6-9f92-fad621fd13df.png)
 
-###SCSS
+### SCSS
 
 ![snow-dark-scss](https://cloud.githubusercontent.com/assets/18164547/14588209/fcb02f58-0506-11e6-9922-fcb8fafffde3.png)
