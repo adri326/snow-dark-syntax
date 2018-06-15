@@ -1,0 +1,25 @@
+@import "syntax-variables";
+
+atom-text-editor, :host {
+
+  .invisible-character {
+    opacity: var(--invisibleOpacity, 1);
+  }
+
+  .cursor {
+    color: var(--cursorColor, @syntax-cursor-color);
+  }
+}
+
+.snow-dark-syntax-fork-hide-current-invisible .cursor-line .invisible-character {
+  text-shadow: none;
+  visibility: hidden;
+}
+
+.snow-dark-syntax-fork-shadow .cursor-line {
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
+
+  .invisible-character {
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+  }
+}

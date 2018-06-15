@@ -1,3 +1,5 @@
+This theme is a fork from the snow-dark-syntax theme:
+
 Copyright (c) 2016 <Lachlan Jadezak>
 
 Permission is hereby granted, free of charge, to any person obtaining

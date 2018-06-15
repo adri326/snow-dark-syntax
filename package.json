@@ -1,17 +1,60 @@
 {
-  "name": "snow-dark-syntax",
+  "name": "snow-dark-syntax-patch",
   "theme": "syntax",
-  "version": "0.1.1",
-  "description": "A dark syntax that's easy on the eyes.",
+  "version": "0.1.1-b",
+  "description": "Patch for snow-dark-syntax, adding customizability",
   "keywords": [
     "snow",
     "dark",
     "syntax",
-    "theme"
+    "theme",
+    "fork"
   ],
-  "repository": "https://github.com/SnowJambi/snow-dark-syntax",
+  "repository": "https://github.com/adri326/snow-dark-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
+  },
+  "main": "lib/main",
+  "configSchema": {
+    "invisibleOpacity": {
+      "title": "Invisible characters opacity",
+      "description": "Set the invisible characters' (enabled in the 'Editor' tab of atom's settings) opacity",
+      "type": [
+        "float",
+        "string"
+      ],
+      "minimum": 0,
+      "maximum": 1,
+      "default": "1",
+      "order": 1
+    },
+    "hideCurrentInvisible": {
+      "title": "Hide invisibles on current line",
+      "description": "Have the invisible characters (found in the editor settings) be hidden on the currently active line",
+      "type": [
+        "boolean"
+      ],
+      "default": "false",
+      "order": 2
+    },
+    "cursorColor": {
+      "title": "Your cursor's color",
+      "description": "What color do you wanna be?",
+      "type": [
+        "string"
+      ],
+      "default": "#8c8782",
+      "order": 3
+    },
+    "textShadow": {
+      "title": "Code shadow",
+      "description": "Have a sleek, discrete shadow on the selected line's code",
+      "type": [
+        "boolean"
+      ],
+      "default": "false",
+      "order": 4
+    }
   }
 }
