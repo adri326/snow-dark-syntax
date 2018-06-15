@@ -64,15 +64,6 @@
       ],
       "default": "false",
       "order": 5
-    },
-    "darkSelection": {
-      "title": "Dark selection",
-      "description": "Make the selection background dark",
-      "type": [
-        "boolean"
-      ],
-      "default": "false",
-      "order": 6
     }
   }
 }
