@@ -11,15 +11,27 @@ atom-text-editor, :host {
   }
 }
 
-.snow-dark-syntax-fork-hide-current-invisible .cursor-line .invisible-character {
+.snow-dark-syntax-patch-hide-current-invisible .cursor-line .invisible-character {
   text-shadow: none;
   visibility: hidden;
 }
 
-.snow-dark-syntax-fork-shadow .cursor-line {
+.snow-dark-syntax-patch-shadow .cursor-line {
   text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
 
   .invisible-character {
     text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.snow-dark-syntax-patch-highlight {
+  .cursor-line {
+    filter: brightness(1.175);
+  }
+}
+
+.snow-dark-syntax-patch-dark-selection {
+  .highlight.selection > .region.selection {
+    background: @line-selection;
   }
 }

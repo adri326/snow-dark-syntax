@@ -55,6 +55,24 @@
       ],
       "default": "false",
       "order": 4
+    },
+    "highlight": {
+      "title": "Current line highlight",
+      "description": "Make the current line's code slightly brighter",
+      "type": [
+        "boolean"
+      ],
+      "default": "false",
+      "order": 5
+    },
+    "darkSelection": {
+      "title": "Dark selection",
+      "description": "Make the selection background dark",
+      "type": [
+        "boolean"
+      ],
+      "default": "false",
+      "order": 6
     }
   }
 }
