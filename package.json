@@ -8,9 +8,9 @@
     "dark",
     "syntax",
     "theme",
-    "fork"
+    "patch"
   ],
-  "repository": "https://github.com/adri326/snow-dark-syntax",
+  "repository": "https://github.com/adri326/snow-dark-syntax-patch",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
