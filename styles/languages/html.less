@@ -1,34 +1,70 @@
 @import "colors";
 
-.html {
+.syntax--html {
 
-  .meta.tag.any {
+  .syntax--meta.syntax--tag.syntax--any {
     color: @base-font;
   }
 
-  .entity.name.tag {
-    &.block, &.inline, &.name {
+  .syntax--html.syntax--entity.syntax--name.syntax--tag {
+
+    &.syntax--inline {
+      color: spin(@dim-blue, -5);
+    }
+
+    &.syntax--block {
+      color: spin(@dim-blue, -10);
+    }
+
+    &.syntax--meta {
       color: @dim-blue;
+    }
+
+    &.syntax--structure {
+      color: darken(@dim-blue, 15%);
+
+      &.syntax--body, &.syntax--head {
+        color: darken(@dim-blue, 10%);
+      }
+    }
+
+    &.syntax--script, &.syntax--style, &.syntax--title {
+      color: darken(@dim-blue, 5%);
     }
   }
 
-  .entity.other.attribute-name.id.html {
-    color: @light-red;
-  }
-
-  .punctuation.separator.key-value {
+  .syntax--punctuation.syntax--separator.syntax--key-value {
     color: @base-font;
   }
 
-  .string.quoted.double {
+  .syntax--string.syntax--quoted.syntax--double {
     color: @green;
 
-    .punctuation.definition.string {
-      &.begin, &.end {
-        color: @green;
+    .syntax--punctuation.syntax--definition.syntax--string {
+      &.syntax--begin, &.syntax--end {
+        color: lighten(@dim-blue, 10%);
       }
     }
   }
 
+  .syntax--punctuation.syntax--definition.syntax--tag {
+    color: darken(@dim-blue, 10%);
+  }
 
+  .syntax--string {
+    color: @base-font;
+  }
+
+  .syntax--other.syntax--attribute-name.syntax--html {
+
+    color: @light-red;
+
+    &.syntax--id {
+      color: @red;
+    }
+  }
+
+  .syntax--meta.syntax--tag.syntax--sgml {
+    color: darken(@dim-blue, 20%);
+  }
 }

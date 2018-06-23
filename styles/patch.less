@@ -1,13 +1,13 @@
 @import "syntax-variables";
 
-atom-text-editor, :host {
+atom-text-editor {
 
   .invisible-character {
     opacity: var(--invisibleOpacity, 1);
   }
 
   .cursor {
-    color: var(--cursorColor, @syntax-cursor-color);
+    color: var(--cursorColor, @syntax-cursor-color) !important;
   }
 }
 
@@ -17,10 +17,10 @@ atom-text-editor, :host {
 }
 
 .snow-dark-syntax-patch-shadow .cursor-line {
-  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
+  text-shadow: 0px 0px 0.4em rgba(0, 0, 0, 0.4);
 
   .invisible-character {
-    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+    text-shadow: 0px 0px 0.4em rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -33,5 +33,9 @@ atom-text-editor, :host {
 .snow-dark-syntax-patch-dark-selection {
   .highlight.selection > .region.selection {
     background: @line-selection;
+  }
+
+  .cursor-line {
+    background: @syntax-selection-color !important;
   }
 }

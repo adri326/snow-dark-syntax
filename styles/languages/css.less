@@ -1,0 +1,29 @@
+@import "colors";
+
+.syntax--css {
+  .syntax--meta.syntax--selector {
+    .syntax--name.syntax--tag.syntax--entity {
+      color: @blue;
+
+      &.syntax--wildcard {
+        color: @cyan;
+      }
+    }
+  }
+
+  .syntax--meta.syntax--property-value {
+    .syntax--constant.syntax--numeric {
+      .syntax--keyword.syntax--unit {
+        color: @blue;
+      }
+    }
+
+    .syntax--constant.syntax--color.syntax--rgb-value {
+      color: @purple;
+
+      .syntax--punctuation {
+        color: lighten(@blue, 5%);
+      }
+    }
+  }
+}
