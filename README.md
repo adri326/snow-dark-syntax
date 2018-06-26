@@ -36,7 +36,7 @@ This theme is intended to be used with a dark UI theme, [snow-darl-syntax] recom
 
 **Long last to dark themes!**
 
-[screenshot]: https://i.imgur.com/qpq1nhE.png
+[screenshot]: https://imgur.com/bjSStom.png
 [snow-dark-syntax]: https://atom.io/themes/snow-dark-syntax/
 [one-dark-ui]: https://atom.io/themes/one-dark-ui/
 [pristine-ui]: https://atom.io/themes/pristine-ui/
