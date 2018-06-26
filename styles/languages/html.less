@@ -1,6 +1,7 @@
 @import "colors";
 
 .syntax--html {
+  color: lighten(@base-font, 5%);
 
   .syntax--meta.syntax--tag.syntax--any {
     color: @base-font;
@@ -19,17 +20,30 @@
     &.syntax--meta {
       color: @dim-blue;
     }
-
+  }
+  .syntax--html.syntax--entity.syntax--tag {
     &.syntax--structure {
       color: darken(@dim-blue, 15%);
 
+      .syntax--html.syntax--punctuation.syntax--definition.syntax--tag {
+        color: darken(@dim-blue, 20%);
+      }
+
       &.syntax--body, &.syntax--head {
         color: darken(@dim-blue, 10%);
+
+        .syntax--punctuation.syntax--definition.syntax--tag {
+          color: darken(@dim-blue, 15%);
+        }
       }
     }
 
     &.syntax--script, &.syntax--style, &.syntax--title {
       color: darken(@dim-blue, 5%);
+
+      .syntax--punctuation.syntax--definition.syntax--tag {
+        color: darken(@dim-blue, 10%);
+      }
     }
   }
 
@@ -48,14 +62,14 @@
   }
 
   .syntax--punctuation.syntax--definition.syntax--tag {
-    color: darken(@dim-blue, 10%);
+    color: darken(@dim-blue, 5%);
   }
 
   .syntax--string {
     color: @base-font;
   }
 
-  .syntax--other.syntax--attribute-name.syntax--html {
+  .syntax--entity.syntax--other.syntax--attribute-name.syntax--html {
 
     color: @light-red;
 
@@ -64,7 +78,33 @@
     }
   }
 
+  .syntax--attribute-with-value.syntax--meta {
+
+    color: @light-red;
+
+    &.syntax--id {
+      color: @red;
+
+      .syntax--string.syntax--quoted, .syntax--string.syntax--quoted .syntax--meta {
+        color: @blue;
+      }
+    }
+
+    .syntax--punctuation.syntax--separator.syntax--key-value,
+    .syntax--string.syntax--quoted .syntax--punctuation.syntax--definition.syntax--string {
+      color: darken(@dim-blue, 10%);
+
+      &.syntax--begin, &.syntax--end {
+        color: darken(@dim-blue, 5%);
+      }
+    }
+  }
+
   .syntax--meta.syntax--tag.syntax--sgml {
     color: darken(@dim-blue, 20%);
+
+    .syntax--punctuation.syntax--definition.syntax--tag {
+      color: darken(@dim-blue, 20%);
+    }
   }
 }

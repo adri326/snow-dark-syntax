@@ -1,0 +1,15 @@
+@import "colors";
+
+.syntax--php {
+  .syntax--meta.syntax--embedded {
+    .syntax--punctuation.syntax--section {
+      &.syntax--begin, &.syntax--end {
+        color: darken(@dim-blue, 5%);
+      }
+    }
+  }
+
+  .syntax--keyword.syntax--control {
+    color: @light-orange;
+  }
+}

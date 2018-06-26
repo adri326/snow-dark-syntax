@@ -18,7 +18,7 @@
       }
     }
 
-    .syntax--constant.syntax--color.syntax--rgb-value {
+    .syntax--constant.syntax--rgb-value.syntax--color {
       color: @purple;
 
       .syntax--punctuation {
@@ -26,4 +26,44 @@
       }
     }
   }
+
+  .syntax--other.syntax--constant.syntax--rgb-value {
+    color: @purple;
+  }
+
+  .syntax--entity.syntax--other.syntax--attribute-name.syntax--class {
+    color: @green;
+  }
+
+  .syntax--support.syntax--constant.syntax--property-value {
+    color: @light-orange;
+  }
+
+  .syntax--other.syntax--variable {
+    color: @cyan;
+  }
+
+  .syntax--punctuation.syntax--terminator.syntax--rule {
+    color: darken(@dim-blue, 5%);
+  }
+
+  .syntax--string {
+    color: @blue;
+  }
+
+  .syntax--support.syntax--function {
+    color: @yellow;
+  }
+
+  .syntax--brace.syntax--round,
+  .syntax--bracket.syntax--curly {
+    &.syntax--meta {
+      color: darken(@dim-blue, 5%);
+    }
+
+    &.syntax--punctuation {
+      color: darken(@dim-blue, 10%);
+    }
+  }
+
 }
