@@ -11,3 +11,6 @@
 * Restyling of HTML
 * Restyling of CSS
 * Color tweaks, to make them more distinct
+
+## 0.2.3 - Better screenshot
+* Beauty is glory
