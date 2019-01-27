@@ -1,0 +1,60 @@
+.syntax--pony {
+  &.syntax--keyword {
+
+    &.syntax--control {
+      color: @yellow;
+      font-weight: bold;
+    }
+
+    &.syntax--method {
+      color: mix(@green, @blue, 20%);
+      font-weight: bold;
+
+      & + .syntax--keyword.syntax--capability {
+        color: mix(@gray, @light-gray, 80%);
+        font-weight: bold;
+      }
+    }
+
+    &.syntax--capability {
+      color: mix(@gray, @light-gray, 85%);
+    }
+
+    &.syntax--import {
+      color: mix(@green, @blue, 70%);
+      font-weight: bold;
+    }
+
+    &.syntax--declaration {
+      font-weight: bold;
+    }
+
+    &.syntax--operator {
+      &.syntax--type {
+        color: mix(@blue, @gray, 70%);
+      }
+
+      &.syntax--logical {
+        color: @light-orange;
+      }
+    }
+  }
+
+  &.syntax--entity.syntax--name {
+    &.syntax--class {
+      color: darken(@dim-blue, 8%);
+    }
+  }
+
+  &.syntax--parameter {
+    &.syntax--variable {
+      color: mix(@green, @base-font, 50%);
+    }
+  }
+
+  &.syntax--string {
+    &.syntax--unquoted {
+      color: mix(@dim-blue, @blue, 50%)
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import "colors";
+
+.syntax--js {
+  .syntax--storage {
+    &.syntax--var {
+      color: @green;
+    }
+    &.syntax--const {
+      color: mix(@green, @blue, 90%);
+    }
+  }
+
+  .syntax--name.syntax--entity.syntax--function {
+    color: @light-orange;
+  }
+}

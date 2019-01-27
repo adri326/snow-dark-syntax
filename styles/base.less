@@ -4,8 +4,8 @@
 // Editor colours
 //---------------
 
+
 atom-text-editor {
-  background-color: @background;
   color: @base-font;
 
   .wrap-guide {
@@ -21,7 +21,6 @@ atom-text-editor {
   }
 
   .gutter {
-    background-color: @syntax-gutter-background-color;
     color: @syntax-gutter-text-color;
 
     .line-number {
@@ -51,7 +50,7 @@ atom-text-editor {
   }
 
   .selection .region {
-    background-color: @syntax-selection-color;
+    background-color: lighten(@line-selection, 5%);
   }
 }
 
