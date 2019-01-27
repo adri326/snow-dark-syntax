@@ -1,7 +1,7 @@
 {
   "name": "snow-dark-syntax-patch",
   "theme": "syntax",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Patch for snow-dark-syntax, adding customizability",
   "keywords": [
     "snow",
