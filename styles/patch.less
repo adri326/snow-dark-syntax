@@ -8,6 +8,7 @@ atom-text-editor {
 
   .cursor {
     color: var(--cursorColor, @syntax-cursor-color) !important;
+    transition: opacity 0.05s;
   }
 }
 
@@ -37,5 +38,13 @@ atom-text-editor {
 
   .cursor-line {
     background: @syntax-selection-color !important;
+  }
+}
+
+atom-text-editor.editor {
+  .syntax--string {
+    .syntax--quoted, .syntax--regexp {
+      -webkit-font-feature-settings: "liga" off, "calt" off;
+    }
   }
 }

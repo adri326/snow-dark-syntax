@@ -53,8 +53,24 @@
   }
 
   &.syntax--string {
+    &.syntax--punctuation.syntax--definition.syntax--unquoted,
     &.syntax--unquoted {
-      color: mix(@dim-blue, @blue, 50%)
+      color: mix(@dim-blue, mix(@gray, @light-gray, 95%), 45%);
+    }
+  }
+
+  &.syntax--annotation {
+    color: mix(@gray, @light-gray, 70%);
+
+    &.syntax--punctuation {
+      color: mix(@gray, @light-gray, 50%);
+    }
+  }
+
+  &.syntax--declaration {
+    &.syntax--punctuation.syntax--ffi {
+      font-weight: bold;
+      color: mix(@gray, @light-gray, 25%);
     }
   }
 }
